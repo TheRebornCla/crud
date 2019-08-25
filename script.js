@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$('#example').DataTable(
 		{
 			"dom": '<"dt-buttons"Bf><"clear">lirtp',
-			"paging": false,
+			"paging": true,
 			"autoWidth": true,
 			"columnDefs": [
 				{ "orderable": false, "targets": 5 }
