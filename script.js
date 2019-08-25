@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	//Only needed for the filename of export files.
 	//Normally set in the title tag of your page.
-	document.title='Simple DataTable';
+	document.title='Kero Games';
 	// DataTable initialisation
 	$('#example').DataTable(
 		{
@@ -9,7 +9,7 @@ $(document).ready(function() {
 			"paging": true,
 			"autoWidth": true,
 			"columnDefs": [
-				{ "orderable": false, "targets": 5 }
+				{ "orderable": false, "targets": 11 }
 			],
 			"buttons": [
 				'colvis',
