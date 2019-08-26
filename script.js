@@ -23,7 +23,7 @@ $(document).ready(function() {
 	);
 	//Add row button
 	$('.dt-add').each(function () {
-		$(this).on('click', function(evt){
+		$(this).on('clik', function(evt){
 			//Create some data and insert it
 			var rowData = [];
 			var table = $('#example').DataTable();
