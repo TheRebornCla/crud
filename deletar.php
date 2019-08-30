@@ -3,7 +3,7 @@ include_once("conexao.php");
 
 $ordem = filter_input(INPUT_GET, 'ordem', FILTER_SANITIZE_NUMBER_INT);
 if(!empty($ordem)){
-	$result_usuario = "DELETE FROM games WHERE ordem=$ordem";
+	$result_usuario = "DELETE FROM jogos WHERE ordem=$ordem";
 	$resultado_usuario = mysqli_query($conn, $result_usuario);
 				if(mysqli_affected_rows($conn)){
 		$_SESSION['msg'] = "<p style='color:green;'>Usuário apagado com sucesso</p>";

@@ -2,7 +2,7 @@
 	$servidor = "localhost";
 	$usuario = "root";
 	$senha = "";
-	$dbname = "kerogames";
+	$dbname = "tablegames";
 	
 	//Criar a conexão
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);

@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	//Only needed for the filename of export files.
-	//Normally set in the title tag of your page.
+	// Only needed for the filename of export files.
+	// Normally set in the title tag of your page.
 	document.title='Kero Games';
 	// DataTable initialisation
 	$('#example').DataTable(
@@ -9,15 +9,15 @@ $(document).ready(function() {
 			"paging": true,
 			"autoWidth": true,
 			"columnDefs": [
-				{ "orderable": false, "targets": 11 }
+				{ "orderable": false, "targets": 5 }
 			],
 			"buttons": [
 				'colvis',
 				'copyHtml5',
-        'csvHtml5',
-				'excelHtml5',
-        'pdfHtml5',
-				'print'
+				'csvHtml5',
+						'excelHtml5',
+				'pdfHtml5',
+						'print'
 			]
 		}
 	);
@@ -53,7 +53,7 @@ $(document).ready(function() {
 	});
 	//Edit row buttons
 	$('.dt-edit').each(function () {
-		$(this).on('click', function(evt){
+		$(this).on('clik', function(evt){
 			$this = $(this);
 			var dtRow = $this.parents('tr');
 			$('div.modal-body').innerHTML='';
@@ -67,7 +67,7 @@ $(document).ready(function() {
 	});
 	//Delete buttons
 	$('.dt-delete').each(function () {
-		$(this).on('click', function(evt){
+		$(this).on('clik', function(evt){
 			$this = $(this);
 			var dtRow = $this.parents('tr');
 			if(confirm("Are you sure to delete this row?")){
